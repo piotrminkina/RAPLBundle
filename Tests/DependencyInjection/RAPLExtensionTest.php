@@ -15,6 +15,8 @@ class RAPLExtensionTest extends \PHPUnit_Framework_TestCase
 
         $loader->load(array(), $container);
 
+        $this->assertEquals('RAPL\RAPL\Configuration', $container->getParameter('rapl.configuration.class'));
+        $this->assertEquals('RAPL\RAPL\EntityManager', $container->getParameter('rapl.entity_manager.class'));
         $this->assertEquals('Proxies', $container->getParameter('rapl.proxy_namespace'));
         $this->assertEquals('%kernel.cache_dir%/rapl/Proxies', $container->getParameter('rapl.proxy_dir'));
 

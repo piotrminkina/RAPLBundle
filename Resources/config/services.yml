@@ -1,5 +1,6 @@
 parameters:
-#    rapl.example.class: RAPL\Bundle\RAPLBundle\Example
+    rapl.configuration.class: RAPL\RAPL\Configuration
+    rapl.entity_manager.class: RAPL\RAPL\EntityManager
 
 services:
 #    rapl.example:
