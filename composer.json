@@ -1,0 +1,25 @@
+{
+    "name": "rapl/rapl-bundle",
+    "type": "symfony-bundle",
+    "description": "Bundle that integrates RAPL into your Symfony2 application",
+    "keywords": ["Doctrine", "API", "Persistence", "REST"],
+    "homepage": "https://github.com/rapl/RAPLBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nic Wortel",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "symfony/framework-bundle": "~2.2",
+        "rapl/rapl": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~3.7"
+    },
+    "autoload": {
+        "psr-4": { "RAPL\\Bundle\\RAPLBundle\\": "" }
+    }
+}
