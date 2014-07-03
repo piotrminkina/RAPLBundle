@@ -1,0 +1,18 @@
+parameters:
+    # classess
+    rapl.configuration.class: RAPL\RAPL\Configuration
+    rapl.entity_manager.class: RAPL\RAPL\EntityManager
+    rapl.basic_auth_connection.class: RAPL\RAPL\Connection\BasicAuthConnection
+    rapl.custom_auth_connection.class: RAPL\RAPL\Connection\CustomAuthConnection
+    rapl.default_connection.class: %rapl.basic_auth_connection.class%
+
+    # metadata
+    rapl.metadata.driver_chain.class: Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain
+    rapl.metadata.yml.class: RAPL\Bundle\RAPLBundle\Mapping\Driver\YamlDriver
+
+services:
+    # metadata
+    rapl.metadata.chain:
+        class: %rapl.metadata.driver_chain.class%
+    rapl.metadata.yml:
+        class: %rapl.metadata.yml.class%
