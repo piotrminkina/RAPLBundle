@@ -15,6 +15,8 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  *
+ * Mostly based on https://github.com/doctrine/DoctrineMongoDBBundle/blob/master/DependencyInjection/DoctrineMongoDBExtension.php
+ *
  * @author Piotr Minkina <projekty@piotrminkina.pl>
  * @author Nic Wortel <nd.wortel@gmail.com>
  * @package RAPL\Bundle\RAPLBundle\DependencyInjection
